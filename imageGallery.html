@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Image Gallery</title>
+	<style type="text/css">
+	.thumb {
+		max-width: 15%;
+		2 numbers = 1st: top and bottom, 2nd = left and right;
+		margin: 0px 10px;
+	}
+	#gallery-wrapper {
+		text-align: center;
+	}
+	body {
+		background-image: url("https://qz.com/wp-content/uploads/2017/06/alien-face.jpg?quality=80&strip=all&w=940");
+		color: red; 
+	}
+
+	.big:hover {
+		width: 1000px;
+	}
+	</style>
+</head>
+<body>
+
+	<div id="gallery-wrapper">
+		<div id="top">
+			<h1>This is a gallery of images chosen for the discerning viewer</h1>
+		</div>
+			<div id="the middle">
+				<h1>Love to be middle text</h1>
+				<img class="thumb" src="./img/as.png" onclick="bigPic.src = this.src">
+				<img class="thumb" src="./img/df.jpg" onclick="bigPic.src = this.src">
+				<img class="thumb" src="./img/fe.jpg" onclick="bigPic.src = this.src">
+				<img class="thumb" src="./img/ff.jpg" onclick="bigPic.src = this.src">
+				<img class="thumb" src="./img/mr.jpg" onclick="bigPic.src = this.src">
+				<img class="thumb" src="./img/ty.png" onclick="bigPic.src = this.src">
+				<img class="thumb" src="./img/ui.jpg" onclick="bigPic.src = this.src">
+			</div>
+			<div id="bottom">
+				<img src="" id="bigPic">
+				<img class="big" src="./img/as.png">
+				<img class="big" src="./img/df.jpg">
+				<img class="big" src="./img/fe.jpg">
+				<img class="big" src="./img/ff.jpg">
+				<img class="big" src="./img/mr.jpg">
+				<img class="big" src="./img/ty.png">
+				<img class="big" src="./img/ui.jpg">
+			</div>
+	</div>
+
+</body>
+</html>
